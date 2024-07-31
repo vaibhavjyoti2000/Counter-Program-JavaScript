@@ -32,15 +32,40 @@
 .buttons:hover {
   background-color: #169fae;
 }
+.buttons {
+  background-color: #6200ea; /* A nice purple color */
+  color: white; /* White text */
+  border: none; /* Remove default border */
+  padding: 10px 20px; /* Padding for size */
+  font-size: 16px; /* Larger font size */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+}
+
+.buttons:hover {
+  background-color: #3700b3; /* Darker purple on hover */
+  transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+.buttons:active {
+  background-color: #290a73; /* Even darker on active/click */
+  transform: scale(0.95); /* Slightly reduce size on active/click */
+}
+
+.buttons:focus {
+  outline: none; /* Remove outline on focus */
+  box-shadow: 0 0 5px #6200ea; /* Add shadow on focus */
+}
 
 @media screen and (max-width: 768px) {
   #countLabel {
-    font-size: 6rem; /* Adjust font size for medium devices */
+    font-size: 5rem; /* Adjust font size for medium devices */
   }
 
   .buttons {
     padding: 8px 16px; /* Adjust padding for medium devices */
-    font-size: 1.2em; /* Adjust font size for buttons */
+    font-size: 1.5em; /* Adjust font size for buttons */
   }
 
   #btnContainer {
@@ -51,11 +76,11 @@
 
 @media screen and (max-width: 480px) {
   #countLabel {
-    font-size: 4rem; /* Further reduce font size for small devices */
+    font-size: 5rem; /* Further reduce font size for small devices */
   }
 
   .buttons {
-    padding: 6px 12px; /* Adjust padding for small devices */
+    padding: 6px 8px; /* Adjust padding for small devices */
     font-size: 1em; /* Adjust font size for buttons */
   }
 
